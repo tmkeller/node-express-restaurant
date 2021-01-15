@@ -11,10 +11,11 @@ $( "#reserveForm" ).on( 'submit', e => {
     $.post( '/reserve', userData ).then( data => {
         console.log( "API RESPONSE" );
         console.log( data );
-        if ( data.hasTable ) {
-            alert( "You got a table, bro!" );
-        } else {
-            alert( "too slow, yo.")
-        }
+        // if ( data.hasTable ) {
+        //     alert( "You got a table, bro!" );
+        // } else {
+        //     alert( "too slow, yo.")
+        // }
+        window.location.href = "/";
     })
 })
