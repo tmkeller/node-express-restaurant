@@ -31,7 +31,7 @@ app.get( '/', (req, res) => {
 })
 
 app.get( '/reserve', (req, res) => {
-    res.send( 'Reserve page' );
+    res.sendFile( path.join( __dirname, "reserve.html" ));
 })
 
 app.get( '/api/tables', (req, res) => {
